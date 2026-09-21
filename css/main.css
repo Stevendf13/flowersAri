@@ -1636,24 +1636,24 @@ h1 {
 
 /* Media Queries para tamaños de pantalla diferentes */
 @media screen and (max-width: 600px) {
-  /* Estilos para pantallas pequeñas */
   h1 {
-      font-size: 1.5em;
+    font-size: 1.5em;
   }
 }
 
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-  /* Estilos para pantallas medianas */
   h1 {
-      font-size: 1.8em;
+    font-size: 1.8em;
   }
 }
 
 @media screen and (min-width: 1025px) {
-  /* Estilos para pantallas grandes */
   h1 {
+    font-size: 2em;
+  }
+}
 
-  /* Dedicatoria en las esquinas */
+/* Dedicatoria en las esquinas superiores */
 .dedicatoria {
   position: fixed;
   top: 25px;
@@ -1662,6 +1662,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   padding: 0 30px;
+  box-sizing: border-box;
 
   font-family: "Arial Narrow", Arial, sans-serif;
   font-size: 22px;
@@ -1680,7 +1681,6 @@ h1 {
   letter-spacing: 4px;
 }
 
-/* Adaptación para celulares */
 @media only screen and (max-width: 600px) {
   .dedicatoria {
     top: 15px;
@@ -1693,37 +1693,3 @@ h1 {
     letter-spacing: 2px;
   }
 }
-
-      font-size: 2em;
-  }
-}
-.dedicatoria {
-  position: absolute;
-  top: 20px;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 20px;
-  z-index: 5;
-  font-family: "Arial Narrow", Arial, sans-serif;
-  color: yellow;
-  font-weight: bold;
-  letter-spacing: 3px;
-  font-size: 16px;
-  box-sizing: border-box;
-}
-
-.dedicatoria span {
-  color: yellow;
-}
-
-@media only screen and (max-width: 600px) {
-  .dedicatoria {
-    top: 10px;
-    padding: 0 12px;
-    font-size: 12px;
-    letter-spacing: 1px;
-  }
-}
-/* Agregar más estilos según sea necesario */
