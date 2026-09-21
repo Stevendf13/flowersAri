@@ -1697,4 +1697,33 @@ h1 {
       font-size: 2em;
   }
 }
+.dedicatoria {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 5;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  color: yellow;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.dedicatoria span {
+  color: yellow;
+}
+
+@media only screen and (max-width: 600px) {
+  .dedicatoria {
+    top: 10px;
+    padding: 0 12px;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+}
 /* Agregar más estilos según sea necesario */
