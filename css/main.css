@@ -1652,6 +1652,48 @@ h1 {
 @media screen and (min-width: 1025px) {
   /* Estilos para pantallas grandes */
   h1 {
+
+  /* Dedicatoria en las esquinas */
+.dedicatoria {
+  position: fixed;
+  top: 25px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  color: yellow;
+
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.dedicatoria span {
+  color: yellow;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+
+/* Adaptación para celulares */
+@media only screen and (max-width: 600px) {
+  .dedicatoria {
+    top: 15px;
+    padding: 0 15px;
+    font-size: 13px;
+    letter-spacing: 2px;
+  }
+
+  .dedicatoria span {
+    letter-spacing: 2px;
+  }
+}
+
       font-size: 2em;
   }
 }
